@@ -1,0 +1,10 @@
+<h1>Segundo Funciona</h1>
+
+
+<h2>{{ naturalRecebida }}</h2>
+<ng-container *ngFor="let natural of natural">
+  <p *ngIf="natural%2 != 0"> {{ natural }} </p>
+  <!--Imprimir Array-->
+  <button (click)="display.emit()">Botão</button>
+
+</ng-container>
